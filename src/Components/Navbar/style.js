@@ -1,37 +1,50 @@
 import styled from "styled-components"
 
-export const NavbarSection =styled.div `
-    padding: 5px 0;
-    overflow: hidden;
-    background: #fff;
-    position: relative;
-    border-bottom: 1px solid #000
+export const HomeSection =styled.div `
+        height: 500px;
+        background : url('../images/home-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        position: relative;
 `
-export const Logo =styled.div `
-    width: 50%;
-    float: left;
+export const HomeInfomration =styled.div `
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%)
 `
-export const LogoText =styled.h2 `
-    font-size: 30px;
-    font-weight: bold
+export const HomeTitle =styled.h2 `
+    font-size: 60px;
+    font-weight: bold;
+    color: #5e5e5e;
 `
-export const UlList= styled.ul `
-    width: 50%;
-    float: left;
-    list-style: none;
-    padding: 0;
+export const HomeInfo = styled.h4 `
+    font-size: 35px;
+    color: #eb5424;
+    margin-bottom: 20px;
+`
+export const HomeDesc =styled.p `
+        font-size: 20px;
+        line-height: 1.5;
+        color: #888;
+        margin-bottom: 20px
 `
 
-export const ListItem = styled.li `
-    display: inline-block;
+export const HomeSpan = styled.span `
+        color: #000
 `
-export const Anchor =styled.a `
-display: block;
-color: #222;
-text-decoration: none;
-padding: 10px 15px;
-font-weight: bold;
-    &:hover{
-        color: #eb5424
-    }
+export const HomeBtn =styled.button `
+        background: #eb5424;
+        color: #fff;
+        font-size: 18px;
+        width: 150px;
+        border: 0;
+        padding: 15px;
+        cursor: pointer;
+        font-weight: bold
+        & :hover {
+            background: #fff;
+            color: #eb5424
+        }
 `
